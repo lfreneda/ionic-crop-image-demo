@@ -7,6 +7,25 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  image picker with crop plugin demo :)
+
+  <ion-col>
+    <ion-button color="primary" size="full" (click)="selectImage()">Selecionar imagem</ion-button>
+  </ion-col>
+  
+    <p>picturePathConverdSrc: {{picturePathConverdSrc}}</p>
+    <ion-avatar>
+      <img [src]="picturePathConverdSrc">
+    </ion-avatar>
+
+    <p>pictureCropedPathConvertedSrc: {{pictureCropedPathConvertedSrc}}</p>
+    <ion-avatar>
+      <img [src]="pictureCropedPathConvertedSrc">
+    </ion-avatar>
+
+    <p>pictureEncodedBase64: {{pictureEncodedBase64}}</p>
+    <ion-avatar>
+      <img [src]="pictureEncodedBase64">
+    </ion-avatar>
+  
 </ion-content>

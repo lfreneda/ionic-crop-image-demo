@@ -1,5 +1,7 @@
 {
   "name": "ionic-crop-image-sample",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
